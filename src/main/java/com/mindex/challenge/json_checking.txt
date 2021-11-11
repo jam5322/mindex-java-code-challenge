@@ -1,0 +1,76 @@
+[
+   {
+      "position" : "Development Manager",
+      "employeeId" : "16a596ae-edd3-4847-99fe-c4518e82c86f",
+      "lastName" : "Lennon",
+      "directReports" : [
+         {
+            "position" : null,
+            "employeeId" : "b7839309-3348-463b-a7e3-5de1c168beb3",
+            "lastName" : null,
+            "department" : null,
+            "directReports" : null,
+            "firstName" : null
+         },
+         {
+            "employeeId" : "03aa1462-ffa9-4978-901b-7c001562cf6f",
+            "position" : null,
+            "firstName" : null,
+            "directReports" : null,
+            "department" : null,
+            "lastName" : null
+         }
+      ],
+      "firstName" : "John",
+      "department" : "Engineering"
+   },
+   {
+      "directReports" : null,
+      "firstName" : "Paul",
+      "department" : "Engineering",
+      "lastName" : "McCartney",
+      "employeeId" : "b7839309-3348-463b-a7e3-5de1c168beb3",
+      "position" : "Developer I"
+   },
+   {
+      "department" : "Engineering",
+      "firstName" : "Ringo",
+      "directReports" : [
+         {
+            "position" : null,
+            "employeeId" : "62c1084e-6e34-4630-93fd-9153afb65309",
+            "lastName" : null,
+            "firstName" : null,
+            "directReports" : null,
+            "department" : null
+         },
+         {
+            "firstName" : null,
+            "directReports" : null,
+            "department" : null,
+            "lastName" : null,
+            "employeeId" : "c0c2293d-16bd-4603-8e08-638a9d18b22c",
+            "position" : null
+         }
+      ],
+      "lastName" : "Starr",
+      "employeeId" : "03aa1462-ffa9-4978-901b-7c001562cf6f",
+      "position" : "Developer V"
+   },
+   {
+      "directReports" : null,
+      "firstName" : "Pete",
+      "department" : "Engineering",
+      "lastName" : "Best",
+      "employeeId" : "62c1084e-6e34-4630-93fd-9153afb65309",
+      "position" : "Developer II"
+   },
+   {
+      "lastName" : "Harrison",
+      "firstName" : "George",
+      "directReports" : null,
+      "department" : "Engineering",
+      "position" : "Developer III",
+      "employeeId" : "c0c2293d-16bd-4603-8e08-638a9d18b22c"
+   }
+]

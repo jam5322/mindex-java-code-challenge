@@ -7,6 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 public class EmployeeController {
     private static final Logger LOG = LoggerFactory.getLogger(EmployeeController.class);
@@ -19,6 +21,12 @@ public class EmployeeController {
         LOG.debug("Received employee create request for [{}]", employee);
 
         return employeeService.create(employee);
+    }
+
+    @GetMapping("/employee")
+    List<Employee> all() {
+        // By default, this will GET/return a list of all employees from the repository
+        return employeeService.findAll();
     }
 
     @GetMapping("/employee/{id}")
