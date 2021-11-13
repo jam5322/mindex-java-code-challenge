@@ -14,7 +14,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @EnableMongoRepositories(basePackageClasses = EmployeeRepository.class)
 @Configuration
-public class MongoConfig{
+public class MongoConfig {
     @Bean
     public MongoTemplate mongoTemplate(MongoClient mongoClient) {
         return new MongoTemplate(mongoDbFactory(mongoClient));
@@ -25,14 +25,14 @@ public class MongoConfig{
         return new SimpleMongoClientDbFactory(mongoClient, "test");
     }
 
-    @Bean(destroyMethod="shutdown")
+    @Bean(destroyMethod = "shutdown")
     public MongoServer mongoServer() {
         MongoServer mongoServer = new MongoServer(new MemoryBackend());
         mongoServer.bind();
         return mongoServer;
     }
 
-    @Bean(destroyMethod="close")
+    @Bean(destroyMethod = "close")
     public MongoClient mongoClient() {
         return MongoClients.create("mongodb:/" + mongoServer().getLocalAddress());
     }
